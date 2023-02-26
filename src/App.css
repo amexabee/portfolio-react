@@ -1,4 +1,5 @@
-body {
+.home {
   background-color: #7b39cc;
   text-align: center;
+  height: 100vh;
 }

@@ -1,0 +1,40 @@
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  background-color: #7b39cc;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+.night {
+  background-color: #000;
+}
+
+.fa-sun-o {
+  position: absolute;
+  left: 2px;
+}
+
+.fa-moon-o {
+  position: absolute;
+  left: 15px;
+  color: #ff6b00;
+}
+
+input + .fa-sun-o {
+  background-color: #2196f3;
+}
+
+input + .fa-sun-o {
+  box-shadow: 0 0 1px #2196f3;
+}
+input + .fa-moon-o {
+  background-color: #2196f3;
+}
+
+input + .fa-moon-o {
+  box-shadow: 0 0 1px #2196f3;
+}
