@@ -5,6 +5,9 @@ import Night from './night';
 const NavBar = () => {
   const [night, setNight] = useState(false);
 
+  let mode = 'light';
+  if (night) mode = 'dark';
+
   const handleClick = () => {
     let value = night ? false : true;
     setNight(value);
@@ -12,13 +15,21 @@ const NavBar = () => {
 
   return (
     <>
-      <h1>My Logo Home</h1>
-      <span className={night ? 'switch night' : 'switch'} onClick={handleClick}>
-        {/* <input type="checkbox" /> */}
-        <Night night={night} />
-      </span>
+      <nav className={mode}>
+        <ul>
+          <li>
+            <a>My Logo</a>
+          </li>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <Night night={night} onClick={handleClick} />
+          </li>
+        </ul>
+      </nav>
 
-      <Outlet />
+      <Outlet context={[night]} />
     </>
   );
 };
