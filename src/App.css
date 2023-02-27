@@ -7,17 +7,3 @@
   background-color: #7b39cc;
   color: #ccc;
 }
-
-.home {
-  text-align: center;
-  height: 90vh;
-}
-
-.home h1 {
-  margin: 0;
-  color: var(--secondary);
-}
-
-.fa {
-  cursor: pointer;
-}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import Night from './night';
 
 const NavBar = () => {
@@ -18,10 +18,13 @@ const NavBar = () => {
       <nav className={mode}>
         <ul>
           <li>
-            <a>My Logo</a>
-          </li>
-          <li>
-            <a>Home</a>
+            <Link className="link" to="/">
+              <i className="fa fa-home">
+                <span className="home-text">
+                  <p>Home</p>
+                </span>
+              </i>
+            </Link>
           </li>
           <li>
             <Night night={night} onClick={handleClick} />
