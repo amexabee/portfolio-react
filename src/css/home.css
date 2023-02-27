@@ -1,0 +1,112 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.home h1 {
+  margin: 0;
+}
+
+.fa:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.hello {
+  text-align: center;
+}
+
+.profile {
+  width: 60%;
+  border-radius: 10%;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100vw;
+  max-height: 50px;
+}
+
+.marquee h4 {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-right: 50px;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee h4:nth-child(2) {
+  top: -42px;
+  left: 100px;
+}
+.marquee h4:nth-child(3) {
+  top: -84px;
+  left: 170px;
+}
+.marquee h4:nth-child(4) {
+  top: -126px;
+  left: 240px;
+}
+.marquee h4:nth-child(5) {
+  top: -168px;
+  left: 300px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-20%);
+  }
+}
+
+.cv-chat {
+  margin: 20px;
+}
+.cv-chat span {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+}
+
+.cv-chat span:hover {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.connect ul {
+  width: 80vw;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
+}
+
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  width: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+}
+
+.logo:hover {
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
+}

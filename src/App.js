@@ -10,6 +10,7 @@ import Home from './components/home';
 // styles
 import './App.css';
 import './css/navBar.css';
+import './css/home.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
