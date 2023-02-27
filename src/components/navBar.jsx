@@ -27,6 +27,15 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
+            <Link className="link" to="/">
+              <i className="fa fa-user">
+                <span className="home-text">
+                  <p>About</p>
+                </span>
+              </i>
+            </Link>
+          </li>
+          <li>
             <Night night={night} onClick={handleClick} />
           </li>
         </ul>
