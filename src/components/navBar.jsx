@@ -18,7 +18,7 @@ const NavBar = () => {
       <nav className={mode}>
         <ul>
           <li>
-            <Link className="link" to="/">
+            <Link className="link" to="home">
               <i className="fa fa-home">
                 <span className="home-text">
                   <p>Home</p>
@@ -27,7 +27,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link className="link" to="/">
+            <Link className="link" to="about">
               <i className="fa fa-user">
                 <span className="home-text">
                   <p>About</p>

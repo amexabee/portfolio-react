@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 10vh;
 }
 
 nav ul {
@@ -24,7 +24,7 @@ nav ul {
   display: none;
   position: relative;
   top: -20px;
-  left: -15px;
+  left: -20px;
 }
 
 .home-text p {
