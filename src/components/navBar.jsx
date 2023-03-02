@@ -1,17 +1,9 @@
-import { useState } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Night from './night';
 
-const NavBar = () => {
-  const [night, setNight] = useState(false);
-
+const NavBar = ({ night, handleClick }) => {
   let mode = 'light';
   if (night) mode = 'dark';
-
-  const handleClick = () => {
-    let value = night ? false : true;
-    setNight(value);
-  };
 
   return (
     <>
@@ -41,7 +33,7 @@ const NavBar = () => {
         </ul>
       </nav>
 
-      <Outlet context={[night]} />
+      {/* <Outlet context={[night]} /> */}
     </>
   );
 };

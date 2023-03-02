@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 90vh;
+  height: 84vh;
   overflow: hidden;
 }
 
@@ -82,31 +82,4 @@
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.connect ul {
-  width: 80vw;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 20px 0;
-  border-radius: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
-}
-
-.logo {
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-  width: 20px;
-  padding: 10px 20px;
-  border-radius: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
-}
-
-.logo:hover {
-  padding: 10px 20px;
-  border-radius: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
 }
