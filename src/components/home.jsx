@@ -5,7 +5,6 @@ import black from '../images/profile-black.jpg';
 const Home = () => {
   const [night] = useOutletContext();
   let mode = 'home light';
-  console.log(night);
   if (night) mode = 'home dark';
   return (
     <div className={mode}>

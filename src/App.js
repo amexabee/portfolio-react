@@ -14,6 +14,7 @@ import './App.css';
 import './css/navBar.css';
 import './css/home.css';
 import './css/footer.css';
+import './css/about.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
