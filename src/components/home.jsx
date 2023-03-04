@@ -24,7 +24,7 @@ const Home = () => {
       </div>
 
       <div className="cv-chat">
-        <span>My CV</span>
+        <span>Résumé</span>
         <span>Questions</span>
       </div>
     </div>

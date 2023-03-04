@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 .dark {
   background-color: #1c1a19;
   color: #ff6b00;

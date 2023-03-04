@@ -11,17 +11,26 @@ const NavBar = ({ night, handleClick }) => {
         <ul>
           <li>
             <Link className="link" to="home">
-              <i className="fa fa-home">
-                <span className="home-text">
+              <i className="fa fa-home nav-icon">
+                <span className="icon-text">
                   <p>Home</p>
                 </span>
               </i>
             </Link>
           </li>
           <li>
+            <Link className="link" to="portfolio">
+              <i className="fa fa-briefcase nav-icon">
+                <span className="icon-text">
+                  <p>Portfolio</p>
+                </span>
+              </i>
+            </Link>
+          </li>
+          <li>
             <Link className="link" to="about">
-              <i className="fa fa-user">
-                <span className="home-text">
+              <i className="fa fa-user nav-icon">
+                <span className="icon-text">
                   <p>About</p>
                 </span>
               </i>
@@ -32,8 +41,6 @@ const NavBar = ({ night, handleClick }) => {
           </li>
         </ul>
       </nav>
-
-      {/* <Outlet context={[night]} /> */}
     </>
   );
 };
