@@ -9,6 +9,7 @@ import Home from './components/home';
 import About from './components/about';
 import Body from './components/body';
 import Portfolio from './components/portfolio';
+import Contact from './components/contact';
 
 // styles
 import './App.css';
@@ -23,8 +24,9 @@ const router = createBrowserRouter(
     <Route path="/" element={<Body />}>
       <Route index element={<Navigate to="home" replace />} />
       <Route path="home" element={<Home />} />
-      <Route path="about" element={<About />} />
       <Route path="portfolio" element={<Portfolio />} />
+      <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
     </Route>
   )
 );

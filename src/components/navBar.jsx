@@ -37,6 +37,15 @@ const NavBar = ({ night, handleClick }) => {
             </Link>
           </li>
           <li>
+            <Link className="link" to="contact">
+              <i className="fa fa-address-book nav-icon">
+                <span className="icon-text">
+                  <p>Contact</p>
+                </span>
+              </i>
+            </Link>
+          </li>
+          <li>
             <Night night={night} onClick={handleClick} />
           </li>
         </ul>
