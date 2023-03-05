@@ -1,15 +1,9 @@
 .about {
-  margin: 0;
   padding: 0 20px;
   height: 84vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.about h3,
-h5 {
-  margin: 0;
 }
 
 .row {
@@ -26,4 +20,8 @@ h5 {
 
 .card p {
   font-size: 12px;
+}
+
+.card > * {
+  margin-bottom: 3vh;
 }

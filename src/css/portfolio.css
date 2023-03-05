@@ -1,0 +1,15 @@
+.portfolio {
+  padding: 0 20px;
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card img {
+  width: 40vw;
+}
+
+.card span > * {
+  margin: 0 7vw;
+}

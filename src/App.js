@@ -8,6 +8,7 @@ import {
 import Home from './components/home';
 import About from './components/about';
 import Body from './components/body';
+import Portfolio from './components/portfolio';
 
 // styles
 import './App.css';
@@ -15,6 +16,7 @@ import './css/navBar.css';
 import './css/home.css';
 import './css/footer.css';
 import './css/about.css';
+import './css/portfolio.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +24,7 @@ const router = createBrowserRouter(
       <Route index element={<Navigate to="home" replace />} />
       <Route path="home" element={<Home />} />
       <Route path="about" element={<About />} />
+      <Route path="portfolio" element={<Portfolio />} />
     </Route>
   )
 );

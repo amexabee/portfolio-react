@@ -1,14 +1,11 @@
 .home {
+  padding-top: 4vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 84vh;
+  height: 80vh;
   overflow: hidden;
-}
-
-.home h1 {
-  margin: 0;
 }
 
 .fa:hover {
@@ -35,26 +32,26 @@
 
 .marquee h4 {
   position: relative;
-  top: 0;
-  left: 0;
+  /* top: 0; */
+  /* left: 0; */
   padding-right: 50px;
   animation: marquee 10s linear infinite;
 }
 
 .marquee h4:nth-child(2) {
-  top: -42px;
+  top: -20px;
   left: 100px;
 }
 .marquee h4:nth-child(3) {
-  top: -84px;
+  top: -40px;
   left: 170px;
 }
 .marquee h4:nth-child(4) {
-  top: -126px;
+  top: -60px;
   left: 240px;
 }
 .marquee h4:nth-child(5) {
-  top: -168px;
+  top: -80px;
   left: 300px;
 }
 
