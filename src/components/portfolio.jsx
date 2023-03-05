@@ -4,9 +4,8 @@ import space from '../images/thumbnails/space.JPG';
 import movies from '../images/thumbnails/movies.JPG';
 import bookstore from '../images/thumbnails/bookstore.JPG';
 const Portfolio = () => {
-  const [night] = useOutletContext();
-  let mode = 'portfolio light';
-  if (night) mode = 'portfolio dark';
+  const [mode] = useOutletContext();
+
   const items = [
     {
       name: blog,
@@ -30,7 +29,7 @@ const Portfolio = () => {
     },
   ];
   return (
-    <div className={mode}>
+    <div className={`portfolio ${mode}`}>
       <h3>My Recent Works</h3>
       <div className="row">
         {items.map((item) => (

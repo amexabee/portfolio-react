@@ -18,6 +18,7 @@ import './css/home.css';
 import './css/footer.css';
 import './css/about.css';
 import './css/portfolio.css';
+import './css/contact.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

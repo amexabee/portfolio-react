@@ -1,0 +1,7 @@
+.contact {
+  padding: 0 20px;
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
