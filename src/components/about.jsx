@@ -36,7 +36,7 @@ const About = () => {
           <h5>Projects</h5>
           <h6>20+ and couting</h6>
           <p>
-            Metrics webapp, Blog App, Space Travellers Hub, Movie Hub and Todo
+            Bookstore app, Blog App, Space Travellers Hub, Movie Hub and Todo
             List.
           </p>
         </div>
