@@ -16,7 +16,7 @@ const NavBar = ({ night, handleClick }) => {
       <nav className={mode}>
         <ul>
           {icons.map((icon) => (
-            <li>
+            <li key={icon.to}>
               <Link className="link" to={icon.to}>
                 <i className={`nav-icon fa fa-${icon.classes}`}>
                   <span className="icon-text">

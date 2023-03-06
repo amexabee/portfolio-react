@@ -33,7 +33,7 @@ const Portfolio = () => {
       <h3>My Recent Works</h3>
       <div className="row">
         {items.map((item) => (
-          <div className="card">
+          <div key={item.name} className="card">
             <img src={item.name} alt={item} />
             <span>
               <Link to={item.github}>
