@@ -68,6 +68,7 @@ const Contact = () => {
           onChange={handleChange}
           id="message"
           placeholder="Your Message"
+          maxLength="280"
         ></textarea>
         {state.errors && (
           <div className="validation">{state.errors.message}</div>
