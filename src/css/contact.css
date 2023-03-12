@@ -1,0 +1,62 @@
+.contact {
+  padding: 0 20px;
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h3 {
+  align-self: flex-start;
+  margin: 0 5vw;
+}
+
+input {
+  margin: 15px 0 0;
+  padding: 10px;
+  width: 70vw;
+  height: 20px;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+textarea {
+  margin: 15px 0 0;
+  padding: 10px;
+  width: 70vw;
+  min-height: 100px;
+  resize: none;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: var(--font);
+  font-size: 15px;
+}
+
+button {
+  margin: 20px 0 0;
+  width: 30vw;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
+}
+
+.validation {
+  color: rgba(255, 0, 0, 0.822);
+}

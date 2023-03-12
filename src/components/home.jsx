@@ -3,17 +3,16 @@ import blue from '../images/profile-blue.jpg';
 import black from '../images/profile-black.jpg';
 
 const Home = () => {
-  const [night] = useOutletContext();
-  let mode = 'home light';
-  if (night) mode = 'home dark';
+  const [mode] = useOutletContext();
+
   return (
-    <div className={mode}>
+    <div className={`home ${mode}`}>
       <div className="hello">
         <p>Hello,</p>
         <h1>Amanuel here.</h1>
         <p>I'm a Full Stack Web Developer</p>
       </div>
-      <img alt="" src={night ? black : blue} className="profile" />
+      <img alt="" src={mode === 'dark' ? black : blue} className="profile" />
 
       <div className="marquee">
         <h4>JavaScript</h4>

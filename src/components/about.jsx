@@ -1,11 +1,10 @@
 import { useOutletContext } from 'react-router-dom';
 
 const About = () => {
-  const [night] = useOutletContext();
-  let mode = 'about light';
-  if (night) mode = 'about dark';
+  const [mode] = useOutletContext();
+
   return (
-    <div className={mode}>
+    <div className={`about ${mode}`}>
       <h3>About Me</h3>
       <div className="row">
         <div className="card">

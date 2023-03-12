@@ -10,10 +10,12 @@ const Body = () => {
     setNight(value);
   };
 
+  const mode = night ? 'dark' : 'light';
+
   return (
     <>
       <NavBar night={night} handleClick={handleClick} />
-      <Outlet context={[night]} />
+      <Outlet context={[mode]} />
       <Footer night={night} />
     </>
   );
