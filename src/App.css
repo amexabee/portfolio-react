@@ -11,3 +11,17 @@
   background-color: #7b39cc;
   color: #ccc;
 }
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .home,
+  .portfolio,
+  .about,
+  .contact {
+    height: 100vh !important;
+    width: 100vw;
+  }
+}

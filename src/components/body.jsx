@@ -13,11 +13,11 @@ const Body = () => {
   const mode = night ? 'dark' : 'light';
 
   return (
-    <>
+    <div className="container">
       <NavBar night={night} handleClick={handleClick} />
       <Outlet context={[mode]} />
       <Footer night={night} />
-    </>
+    </div>
   );
 };
 
