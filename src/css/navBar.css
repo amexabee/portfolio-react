@@ -39,3 +39,19 @@ nav ul {
 .nav-icon:hover .icon-text {
   display: block;
 }
+
+@media (min-width: 768px) {
+  nav {
+    height: 100vh;
+    align-items: flex-start;
+    align-items: center;
+  }
+
+  nav ul {
+    width: 7vw;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
