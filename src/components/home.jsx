@@ -1,10 +1,22 @@
-import { useOutletContext } from 'react-router-dom';
+import { useOutletContext, Link } from 'react-router-dom';
 import blue from '../images/profile-blue.jpg';
 import black from '../images/profile-black.jpg';
 import rails from '../images/langs/rails.png';
 
 const Home = () => {
   const [mode] = useOutletContext();
+
+  const onButtonClick = () => {
+    fetch('Resume.pdf').then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'Resume.pdf';
+        alink.click();
+      });
+    });
+  };
 
   return (
     <div className={`home ${mode}`}>
@@ -28,9 +40,13 @@ const Home = () => {
         </h4>
       </div>
 
-      <div className="cv-chat">
-        <span className={`hover${mode}`}>Resume</span>
-        <span className={`hover${mode}`}>Questions</span>
+      <div className="resume-chat">
+        <span onClick={onButtonClick} className={`download hover${mode}`}>
+          Resume
+        </span>
+        <span className={`hover${mode}`}>
+          <Link to="../contact">Questions</Link>
+        </span>
       </div>
     </div>
   );

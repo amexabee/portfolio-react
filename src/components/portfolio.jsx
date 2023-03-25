@@ -13,11 +13,8 @@ const Portfolio = () => {
         <h3 className="recent">My Recent Works</h3>
         <div className="projects">
           {projects.map((project) => (
-            <Link to={project.to}>
-              <div
-                key={project.label}
-                className={`project ${mode} hover${mode}`}
-              >
+            <Link key={project.label} to={project.to}>
+              <div className={`project ${mode} hover${mode}`}>
                 <h3>{project.label}</h3>
                 <p>Built with: {project.built}</p>
               </div>
@@ -42,6 +39,10 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
+      <p className="visit">
+        Please visit my <Link to="https://github.com/amexabee">GitHub</Link> to
+        get the source code for these 10 projects and more others!
+      </p>
     </div>
   );
 };

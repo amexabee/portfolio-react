@@ -17,7 +17,7 @@ const posts = [
   {
     name: movies,
     github: 'https://github.com/amexabee/metrics-webapp',
-    link: 'https://amexabee.github.io/To-Do-List/dist/',
+    link: 'https://amanuel-moviehub.netlify.app/',
   },
   {
     name: bookstore,
@@ -43,16 +43,6 @@ const projects = [
     to: 'https://github.com/amexabee/blog-app',
   },
   {
-    label: 'Catalog App',
-    built: 'Ruby',
-    to: 'https://github.com/amexabee/catalog-of-my-things',
-  },
-  {
-    label: 'School Library App',
-    built: 'Ruby',
-    to: 'https://github.com/amexabee/school-library',
-  },
-  {
     label: 'Calculator App',
     built: 'React',
     to: 'https://amanuel-math-magicians-8u34.onrender.com/',
@@ -60,7 +50,7 @@ const projects = [
   {
     label: 'Leaderboard App',
     built: 'JavaScript',
-    to: 'https://github.com/amexabee/Leaderboard',
+    to: 'https://amanuel-leaderboad.netlify.app/',
   },
   {
     label: 'Todo List',

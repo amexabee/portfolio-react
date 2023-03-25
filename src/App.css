@@ -2,19 +2,29 @@
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 .dark {
   background-image: url('images/download.png');
   background-color: #1c1a19;
   color: #5c6274;
 }
 
+.dark a,
+.dark .fa,
+.dark .download {
+  color: #ff6b00;
+  text-decoration: none;
+}
+
 .light {
   background-color: #7b39cc;
   color: #ccc;
+}
+
+.light a,
+.light .fa,
+.light .download {
+  color: #010511;
+  text-decoration: none;
 }
 
 .hoverdark:hover {
