@@ -1,31 +1,18 @@
 import { useOutletContext } from 'react-router-dom';
 import blue from '../images/profile-blue.jpg';
 import black from '../images/profile-black.jpg';
-import react from '../images/react.svg';
-import ruby from '../images/ruby.svg';
-import js from '../images/js.png';
-import rails from '../images/rails.png';
+import rails from '../images/langs/rails.png';
 
 const Home = () => {
   const [mode] = useOutletContext();
 
   return (
     <div className={`home ${mode}`}>
-      <div className="lang">
-        <img src={react} className="react" alt="react" />
-        <img src={ruby} className="ruby" alt="ruby" />
-        <img src={js} className="js" alt="js" />
-      </div>
       <div className="welcome">
         <div className="hello">
           <h5>Hello,</h5>
           <h1>Amanuel here.</h1>
-          <p>
-            I'm a software developer; I can help you build a product, feature,
-            or website. <br />
-            Check out my work and experience, and feel free to contact me if
-            you're interested in working together.
-          </p>
+          <h4>Full-Stack Web Developer</h4>
         </div>
         <img alt="" src={mode === 'dark' ? black : blue} className="profile" />
       </div>
@@ -42,8 +29,8 @@ const Home = () => {
       </div>
 
       <div className="cv-chat">
-        <span>Resume</span>
-        <span>Questions</span>
+        <span className={`hover${mode}`}>Resume</span>
+        <span className={`hover${mode}`}>Questions</span>
       </div>
     </div>
   );

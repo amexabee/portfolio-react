@@ -14,24 +14,23 @@
 }
 
 .welcome {
+  margin-top: 10vh;
+  height: 50vh;
   display: flex;
-  height: 100vw;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 0px 8px 16px 0px rgba(207, 22, 22, 0.5);
+  border-radius: 30px;
 }
 
 .hello {
   text-align: center;
 }
 
-.hello p {
-  display: none;
-}
-
 .profile {
   width: 60%;
-  border-radius: 10%;
+  border-radius: 40%;
 }
 
 .marquee {
@@ -44,27 +43,28 @@
 
 .marquee h4 {
   position: relative;
+  top: 30px;
   padding-right: 50px;
   animation: marquee 10s linear infinite;
 }
 
 .marquee h4:nth-child(2) {
-  top: -20px;
+  top: 10px;
   left: 100px;
 }
 
 .marquee h4:nth-child(3) {
-  top: -40px;
+  top: -11px;
   left: 170px;
 }
 
 .marquee h4:nth-child(4) {
-  top: -60px;
+  top: -32px;
   left: 240px;
 }
 
 .marquee h4:nth-child(5) {
-  top: -80px;
+  top: -52px;
   left: 300px;
 }
 
@@ -85,7 +85,8 @@
   margin: 20px;
   padding: 15px;
   border-radius: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
 }
 
 .cv-chat span:hover {
@@ -93,26 +94,6 @@
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.react {
-  display: none;
-}
-
-.ruby {
-  display: none;
-}
-
-.js {
-  display: none;
-}
-
-.rails {
-  display: none;
-}
-
-.banner {
-  display: none;
 }
 
 @media (min-width: 768px) {
@@ -135,15 +116,6 @@
     height: 200px;
   }
 
-  .hello::before {
-    content: '';
-    border-left: 1px solid #ccc;
-    height: 25vw;
-    position: absolute;
-    left: 55%;
-    transform: translateX(-50%);
-  }
-
   .profile {
     width: 30%;
   }
@@ -163,74 +135,7 @@
 
   .cv-chat {
     position: relative;
-    top: -150px;
-    left: -300px;
-  }
-
-  .hello p {
-    display: block;
-    align-self: start;
-  }
-
-  .lang {
-    display: flex;
-    margin-top: 5px;
-    justify-content: space-between;
-    width: 70vw;
-  }
-
-  .react {
-    display: block;
-    height: 20vmin;
-    pointer-events: none;
-    animation: spin infinite 20s linear;
-  }
-
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  .ruby {
-    display: block;
-    height: 20vmin;
-    animation: pulse 2s ease-in-out infinite;
-  }
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(1.2);
-      opacity: 0.7;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-
-  .js {
-    display: block;
-    height: 20vmin;
-    border-radius: 10px;
-    animation: flip 2s ease-in-out infinite alternate;
-  }
-
-  @keyframes flip {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(180deg);
-      opacity: 0.5;
-    }
+    top: -40px;
   }
 
   .marquee h4:nth-child(5) {
@@ -238,7 +143,7 @@
   }
 
   .marquee h4:nth-child(6) {
-    top: -110px;
+    top: -90px;
     left: 280px;
   }
 

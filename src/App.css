@@ -2,14 +2,27 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .dark {
+  background-image: url('images/download.png');
   background-color: #1c1a19;
-  color: #ff6b00;
+  color: #5c6274;
 }
 
 .light {
   background-color: #7b39cc;
   color: #ccc;
+}
+
+.hoverdark:hover {
+  background-color: #ccc;
+}
+
+.hoverlight:hover {
+  background-color: blue;
 }
 
 @media (min-width: 768px) {

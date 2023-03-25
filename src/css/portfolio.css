@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .card img {
@@ -12,4 +13,52 @@
 
 .card span > * {
   margin: 0 7vw;
+}
+
+.projects {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .recent {
+    position: relative;
+    top: 30px;
+    left: 500px;
+  }
+
+  .portfolio {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .portfolio .row {
+    display: grid;
+    grid-template-columns: 25vw 25vw;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .projects {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .projects h4 {
+    margin: 20px 0;
+  }
+
+  .project {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card img {
+    width: 22vw;
+  }
+
+  .card span > * {
+    margin: 0 5vw;
+  }
 }
