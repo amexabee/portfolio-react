@@ -28,9 +28,9 @@ const posts = [
 
 const projects = [
   {
-    label: 'Budget App',
-    built: 'Ruby, Rails, Postgres',
-    to: 'http://rails-733t.onrender.com/',
+    label: 'Swimming Class Booking',
+    built: 'React, Ruby, Rails, Postgres',
+    to: 'https://swimming.onrender.com/',
   },
   {
     label: 'Recipe App',
