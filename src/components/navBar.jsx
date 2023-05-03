@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Night from './night';
+import Main from './main';
 
 const NavBar = ({ night, handleClick }) => {
   let mode = 'light';
@@ -27,7 +27,7 @@ const NavBar = ({ night, handleClick }) => {
             </li>
           ))}
           <li>
-            <Night night={night} onClick={handleClick} />
+            <Main night={night} onClick={handleClick} />
           </li>
         </ul>
       </nav>

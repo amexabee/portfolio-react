@@ -6,10 +6,8 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import Home from './components/home';
-import About from './components/about';
 import Body from './components/body';
-import Portfolio from './components/portfolio';
-import Contact from './components/contact';
+import Main from './components/main';
 
 // styles
 import './App.css';
@@ -25,9 +23,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Body />}>
       <Route index element={<Navigate to="home" replace />} />
       <Route path="home" element={<Home />} />
-      <Route path="portfolio" element={<Portfolio />} />
-      <Route path="about" element={<About />} />
-      <Route path="contact" element={<Contact />} />
+      <Route path="main" element={<Main />} />
     </Route>
   )
 );
