@@ -3,7 +3,6 @@
 }
 
 .dark {
-  /* background-image: url('images/download.png'); */
   background-color: #000;
   color: #5c6274;
 }
@@ -36,10 +35,6 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-    display: flex;
-  }
-
   .home,
   .portfolio,
   .about,

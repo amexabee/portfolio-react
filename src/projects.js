@@ -1,7 +1,7 @@
-import blog from '../images/thumbnails/blog.JPG';
-import space from '../images/thumbnails/space.JPG';
-import movies from '../images/thumbnails/movies.JPG';
-import bookstore from '../images/thumbnails/bookstore.JPG';
+import blog from './images/thumbnails/blog.JPG';
+import space from './images/thumbnails/space.JPG';
+import movies from './images/thumbnails/movies.JPG';
+import bookstore from './images/thumbnails/bookstore.JPG';
 
 const posts = [
   {

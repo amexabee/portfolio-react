@@ -51,33 +51,3 @@ const Home = () => {
 };
 
 export default Home;
-
-/*
-    <div className="marquee">
-        <h4>JavaScript</h4>
-        <h4>React</h4>
-        <h4>Redux</h4>
-        <h4>Ruby</h4>
-        <h4>Rails</h4>
-        <h4>
-          <img src={rails} className="rails" alt="rails" />
-        </h4>
-      </div>
-
-    const onButtonClick = () => {
-    fetch('Resume.pdf').then((response) => {
-      response.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement('a');
-        alink.href = fileURL;
-        alink.download = 'Resume.pdf';
-        alink.click();
-      });
-    });
-  };
-
-
-    <span onClick={onButtonClick} className={`download hover${mode}`}>
-      Resume
-    </span>
-    */

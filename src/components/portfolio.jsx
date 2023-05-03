@@ -1,5 +1,5 @@
 import { useOutletContext, Link } from 'react-router-dom';
-import getPosts, { getProjects } from './projects';
+import getPosts, { getProjects } from '../projects';
 
 const Portfolio = () => {
   const [mode] = useOutletContext();
