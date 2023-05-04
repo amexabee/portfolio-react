@@ -8,6 +8,9 @@ const Main = () => {
       <About />
       <Portfolio />
       <Contact />
+      <p className="made">
+        Made with <i className="fa fa-heart" /> by Amanuel Galema
+      </p>
     </div>
   );
 };

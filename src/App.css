@@ -34,12 +34,13 @@
   background-color: blue;
 }
 
-@media (min-width: 768px) {
-  .home,
-  .portfolio,
-  .about,
-  .contact {
-    height: 100vh !important;
-    width: 100vw;
-  }
+.made {
+  color: #ccc;
+  text-align: center;
+  font-size: 20px;
+  margin: 100px 0 40px;
+  letter-spacing: 0.1rem;
+}
+.made .fa {
+  color: red;
 }

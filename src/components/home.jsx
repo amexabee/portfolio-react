@@ -1,39 +1,22 @@
-import { useOutletContext, Link } from 'react-router-dom';
-import blue from '../images/profile-blue.jpg';
+import { Link } from 'react-router-dom';
 import black from '../images/profile-black.jpg';
 import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stars } from '@react-three/drei';
 
 const Home = () => {
-  const [mode, handleClick] = useOutletContext();
-  const pic = mode === 'dark' ? black : blue;
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load(pic);
-
+  const texture = textureLoader.load(black);
   return (
-    <div className={`home ${mode}`}>
-      <div className="welcome">
-        <div className="hello">
-          <h5>Hello,</h5>
-          <h1>Amanuel here.</h1>
-          <h4>Full-Stack Web Developer</h4>
-        </div>
-        <img
-          alt=""
-          src={mode === 'dark' ? black : blue}
-          className="profile"
-          style={{ opacity: 0 }}
-        />
+    <div className="home dark">
+      <div className="intro">
+        Welcome to <br />
+        my Universe
       </div>
       <div style={{ position: 'fixed', width: '100vw', height: '100vh' }}>
         <Canvas>
           <OrbitControls />
-          <mesh
-            position={[1.5, 0.9, 0]}
-            scale={[2, 2, 2]}
-            onClick={handleClick}
-          >
+          <mesh position={[1.5, 0.9, 0]} scale={[2, 2, 2]}>
             <boxGeometry args={[1, 1, 1]} />
             <meshBasicMaterial map={texture} />
           </mesh>
@@ -41,8 +24,8 @@ const Home = () => {
         </Canvas>
       </div>
 
-      <div className="resume-chat">
-        <span className={`hover${mode}`}>
+      <div className="explore">
+        <span className="hoverdark">
           <Link to="../main">Explore</Link>
         </span>
       </div>

@@ -1,17 +1,44 @@
-import { useOutletContext, Link } from 'react-router-dom';
-import getPosts, { getProjects } from '../projects';
+import { Link } from 'react-router-dom';
+import projects from './../constants/projects';
 
 const Portfolio = () => {
-  const [mode] = useOutletContext();
-
-  const posts = getPosts();
-  const projects = getProjects();
-
   return (
     <>
-      <div className={`portfolio ${mode}`}>
-        <div>
-          <h3 className="recent">My Recent Works</h3>
+      <div className="portfolio dark">
+        <h1 className="title">
+          My Recent works <i className="fa fa-briefcase fa-2x" />
+        </h1>
+        <div className="row">
+          {projects.map((project) => (
+            <div key={project.name} className="card">
+              <img src={project.name} alt={project} />
+              <h1>{project.label}</h1>
+              <p>{project.description}</p>
+              <p>Built with: {project.tools}</p>
+              <Link to={project.github}>
+                <span>Github</span>
+              </Link>
+              <Link to={project.link}>
+                <span>Live </span>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Portfolio;
+
+{
+  /* <p className="visit">
+  Please visit my <Link to="https://github.com/amexabee">GitHub</Link>{' '}
+  to get the source code for these 10 projects and more others!
+</p> */
+}
+{
+  /* <div>
           <div className="projects">
             {projects.map((project) => (
               <Link key={project.label} to={project.to}>
@@ -22,31 +49,5 @@ const Portfolio = () => {
               </Link>
             ))}
           </div>
-        </div>
-        <div className="row">
-          {posts.map((post) => (
-            <div key={post.name} className="card">
-              <img src={post.name} alt={post} />
-              <span>
-                <Link to={post.github}>
-                  <i className="fa fa-code" />
-                </Link>
-              </span>
-              <span>
-                <Link to={post.link}>
-                  <i className="fa fa-external-link" />
-                </Link>
-              </span>
-            </div>
-          ))}
-        </div>
-        {/* <p className="visit">
-          Please visit my <Link to="https://github.com/amexabee">GitHub</Link>{' '}
-          to get the source code for these 10 projects and more others!
-        </p> */}
-      </div>
-    </>
-  );
-};
-
-export default Portfolio;
+        </div> */
+}
