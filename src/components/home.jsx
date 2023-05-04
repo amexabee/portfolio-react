@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import black from '../images/profile-black.jpg';
 import * as THREE from 'three';
@@ -7,16 +8,27 @@ import { OrbitControls, Stars } from '@react-three/drei';
 const Home = () => {
   const textureLoader = new THREE.TextureLoader();
   const texture = textureLoader.load(black);
+  const [showMessage, setShowMessage] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowMessage(true);
+    }, 5000);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
   return (
     <div className="home dark">
       <div className="intro">
-        Welcome to <br />
-        my Universe
+        {showMessage && <h1>WELCOME TO MY UNIVERSE</h1>}
       </div>
       <div style={{ position: 'fixed', width: '100vw', height: '100vh' }}>
         <Canvas>
           <OrbitControls />
-          <mesh position={[1.5, 0.9, 0]} scale={[2, 2, 2]}>
+          <mesh position={[0, 0.2, -5]} scale={[2, 2, 2]}>
             <boxGeometry args={[1, 1, 1]} />
             <meshBasicMaterial map={texture} />
           </mesh>
@@ -25,9 +37,11 @@ const Home = () => {
       </div>
 
       <div className="explore">
-        <span className="hoverdark">
-          <Link to="../main">Explore</Link>
-        </span>
+        {showMessage && (
+          <span className="hoverdark">
+            <Link to="../main">Explore</Link>
+          </span>
+        )}
       </div>
     </div>
   );
