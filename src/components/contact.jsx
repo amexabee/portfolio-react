@@ -1,13 +1,12 @@
-import { useOutletContext } from 'react-router-dom';
 import Joi from 'joi-browser';
 import { useState } from 'react';
+import socials from '../constants/socials';
 
 const Contact = () => {
   const [state, setState] = useState({
     data: { name: '', email: '', message: '' },
     errors: '',
   });
-  const [mode] = useOutletContext();
 
   const schema = {
     name: Joi.string().required(),
@@ -42,33 +41,30 @@ const Contact = () => {
   };
 
   return (
-    <div className={`contact ${mode}`}>
+    <div className="contact dark">
       <div className="details">
-        <div className="email">
-          <h3>Email Me:</h3>
-          <p>amexabee@gmail.com</p>
+        <h1 className="title">
+          Contact Details <i className="fa fa-envelope fa-2x" />
+        </h1>
+        <div>
+          <h3>Email Address</h3>
+          <p>amexabee@yahoo.com</p>
         </div>
-        <div className="contact-details">
-          <h1>Contact Details</h1>
-          <div>
-            <h3>Email Address</h3>
-            <p>amexabee@yahoo.com</p>
-          </div>
-          <div>
-            <h3>Phone</h3>
-            <p>+90 548 836 4664</p>
-          </div>
-          <div>
-            <h3>Whatsapp</h3>
-            <p>+90 548 836 4664</p>
-          </div>
-        </div>
+        <ul className="socials">
+          {socials.map((social) => (
+            <li className="social" key={social.name}>
+              <a href={social.link}>
+                <i className={'fa fa-3x ' + social.name} />
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="message">
         <h3>Get In Touch</h3>
         <div>
           <input
-            className={mode}
+            className="dark"
             onChange={handleChange}
             type="text"
             id="name"
@@ -80,7 +76,7 @@ const Contact = () => {
         </div>
         <div>
           <input
-            className={mode}
+            className="dark"
             onChange={handleChange}
             type="email"
             id="email"
@@ -92,7 +88,7 @@ const Contact = () => {
         </div>
         <div>
           <textarea
-            className={mode}
+            className="dark"
             onChange={handleChange}
             id="message"
             placeholder="Your Message"
@@ -102,7 +98,7 @@ const Contact = () => {
             <div className="validation">{state.errors.message}</div>
           )}
         </div>
-        <button className={mode} onClick={handleClick}>
+        <button className="dark" onClick={handleClick}>
           Send
         </button>
       </div>

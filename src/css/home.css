@@ -4,28 +4,21 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 80vh;
   overflow: hidden;
 }
 
-.fa:hover {
-  cursor: pointer;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.welcome {
-  margin-top: 10vh;
-  height: 50vh;
+.intro {
+  margin: 7vh 0;
+  height: 60vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 0px 8px 16px 0px rgba(207, 22, 22, 0.5);
+  box-shadow: var(--shadow);
   border-radius: 30px;
-}
-
-.hello {
-  text-align: center;
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5),
+    rgba(74, 47, 189, 0.5)
+  );
+  font-size: 3rem;
 }
 
 .profile {
@@ -33,122 +26,29 @@
   border-radius: 40%;
 }
 
-.marquee {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100vw;
-  max-height: 50px;
-}
-
-.marquee h4 {
-  position: relative;
-  top: 30px;
-  padding-right: 50px;
-  animation: marquee 10s linear infinite;
-}
-
-.marquee h4:nth-child(2) {
-  top: 10px;
-  left: 100px;
-}
-
-.marquee h4:nth-child(3) {
-  top: -11px;
-  left: 170px;
-}
-
-.marquee h4:nth-child(4) {
-  top: -32px;
-  left: 240px;
-}
-
-.marquee h4:nth-child(5) {
-  top: -52px;
-  left: 300px;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-20%);
-  }
-}
-
-.resume-chat {
+.explore {
   margin: 20px;
+  z-index: 99999999;
 }
 
-.resume-chat span {
-  margin: 20px;
-  padding: 15px;
-  border-radius: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+.explore span {
+  margin: 50px;
   border: 1px solid #ccc;
-}
-
-.resume-chat span:hover {
+  padding: 0.375rem 0.75rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 768px) {
-  .home {
-    padding: 0;
-    max-height: 100vh;
-  }
+.explore span a {
+  color: #915eff;
+}
 
-  .welcome {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+.explore span:hover {
+  cursor: pointer;
+}
 
-  .hello {
-    margin-right: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 200px;
-  }
-
-  .profile {
-    width: 30%;
-  }
-
-  .marquee h4 {
-    animation: marquee 30s linear infinite;
-  }
-
-  @keyframes marquee {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-
-  .resume-chat {
-    position: relative;
-    top: -40px;
-  }
-
-  .marquee h4:nth-child(5) {
-    display: none;
-  }
-
-  .marquee h4:nth-child(6) {
-    top: -90px;
-    left: 280px;
-  }
-
-  .rails {
-    display: block;
-    height: 12vmin;
-  }
+.explore span a:hover {
+  color: #000;
 }
