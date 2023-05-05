@@ -1,0 +1,28 @@
+nav {
+  position: fixed;
+  height: 5vh;
+  width: 100vw;
+  background: var(--background);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 5vw;
+}
+
+nav li a,
+nav a {
+  color: red;
+  text-decoration: none;
+}
+
+nav li a:hover,
+nav a:hover {
+  cursor: pointer;
+}

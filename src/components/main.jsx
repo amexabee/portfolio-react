@@ -1,10 +1,12 @@
 import About from './about';
 import Portfolio from './portfolio';
 import Contact from './contact';
+import NavBar from './navBar';
 
 const Main = () => {
   return (
     <div>
+      <NavBar />
       <About />
       <Portfolio />
       <Contact />

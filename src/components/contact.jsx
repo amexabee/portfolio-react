@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact dark">
+    <div className="contact dark" id="contact">
       <div className="details">
         <h1 className="title">
           Contact Details <i className="fa fa-envelope fa-2x" />

@@ -2,9 +2,9 @@ import Tech from './tech';
 
 const About = () => {
   return (
-    <div className={`about dark`}>
+    <div className="about dark" id="about">
       <div className="hello">
-        <div className="dot">
+        <div className="lolipop">
           <div className="round" />
           <div className="violet" />
         </div>
