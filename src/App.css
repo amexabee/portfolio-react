@@ -4,7 +4,7 @@
 
 .dark {
   background-color: #000;
-  color: #5c6274;
+  color: #ccc;
 }
 
 .dark a,
@@ -14,24 +14,8 @@
   text-decoration: none;
 }
 
-.light {
-  background-color: #7b39cc;
-  color: #ccc;
-}
-
-.light a,
-.light .fa,
-.light .download {
-  color: #010511;
-  text-decoration: none;
-}
-
 .hoverdark:hover {
   background-color: #ccc;
-}
-
-.hoverlight:hover {
-  background-color: blue;
 }
 
 .made {

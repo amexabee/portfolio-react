@@ -103,9 +103,9 @@
 
 .services h1 {
   font-size: 32px;
-  margin-bottom: 30px;
   color: #915eff;
   text-align: left;
+  margin: 0 0 2rem 5vw;
 }
 
 .services .items {

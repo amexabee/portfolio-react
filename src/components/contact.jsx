@@ -41,68 +41,70 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact dark" id="contact">
-      <div className="details">
-        <h1 className="title">
-          Contact Details <i className="fa fa-envelope fa-2x" />
-        </h1>
-        <div>
-          <h3>Email Address</h3>
-          <p>amexabee@yahoo.com</p>
+    <>
+      <h1 className="title" id="contact">
+        Contact Details <i className="fa fa-envelope fa-2x" />
+      </h1>
+      <div className="contact dark">
+        <div className="details">
+          <div>
+            <h3>Email Address</h3>
+            <p>amexabee@yahoo.com</p>
+          </div>
+          <ul className="socials">
+            {socials.map((social) => (
+              <li className="social" key={social.name}>
+                <a href={social.link}>
+                  <i className={'fa fa-3x ' + social.name} />
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-        <ul className="socials">
-          {socials.map((social) => (
-            <li className="social" key={social.name}>
-              <a href={social.link}>
-                <i className={'fa fa-3x ' + social.name} />
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="message">
+          <h3>Get In Touch</h3>
+          <div>
+            <input
+              className="dark"
+              onChange={handleChange}
+              type="text"
+              id="name"
+              placeholder="Full Name"
+            />
+            {state.errors && (
+              <div className="validation">{state.errors.name}</div>
+            )}
+          </div>
+          <div>
+            <input
+              className="dark"
+              onChange={handleChange}
+              type="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            {state.errors && (
+              <div className="validation">{state.errors.email}</div>
+            )}
+          </div>
+          <div>
+            <textarea
+              className="dark"
+              onChange={handleChange}
+              id="message"
+              placeholder="Your Message"
+              maxLength="280"
+            ></textarea>
+            {state.errors && (
+              <div className="validation">{state.errors.message}</div>
+            )}
+          </div>
+          <button className="dark" onClick={handleClick}>
+            Send
+          </button>
+        </div>
       </div>
-      <div className="message">
-        <h3>Get In Touch</h3>
-        <div>
-          <input
-            className="dark"
-            onChange={handleChange}
-            type="text"
-            id="name"
-            placeholder="Full Name"
-          />
-          {state.errors && (
-            <div className="validation">{state.errors.name}</div>
-          )}
-        </div>
-        <div>
-          <input
-            className="dark"
-            onChange={handleChange}
-            type="email"
-            id="email"
-            placeholder="Email Address"
-          />
-          {state.errors && (
-            <div className="validation">{state.errors.email}</div>
-          )}
-        </div>
-        <div>
-          <textarea
-            className="dark"
-            onChange={handleChange}
-            id="message"
-            placeholder="Your Message"
-            maxLength="280"
-          ></textarea>
-          {state.errors && (
-            <div className="validation">{state.errors.message}</div>
-          )}
-        </div>
-        <button className="dark" onClick={handleClick}>
-          Send
-        </button>
-      </div>
-    </div>
+    </>
   );
 };
 

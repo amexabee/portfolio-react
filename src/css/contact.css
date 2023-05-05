@@ -1,5 +1,19 @@
+#contact {
+  color: #915eff;
+  margin: 10rem 0 5rem 5vw;
+}
+
+.fa-envelope {
+  color: #ff6b00 !important;
+  position: relative;
+  top: 0;
+  left: 10px;
+}
+
 .contact {
   padding: 0 20px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .message {
@@ -15,8 +29,9 @@
 }
 
 .details {
-  padding: 3vh 50px;
-  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
@@ -53,7 +68,7 @@ textarea::placeholder {
 
 button {
   margin: 40px 0 0;
-  width: 10vw;
+  width: 20vw;
   height: 50px;
   border-radius: 10px;
   border: 0;
@@ -65,8 +80,8 @@ button {
   color: rgba(255, 0, 0, 0.822);
 }
 
-.contact-details {
-  display: none;
+.details div {
+  margin: 5rem 2rem;
 }
 
 .socials {
@@ -79,6 +94,7 @@ button {
   flex-wrap: wrap;
   list-style: none;
 }
+
 .socials li {
   margin: 10px;
   width: 50px;
@@ -86,7 +102,7 @@ button {
 }
 
 .social .fa {
-  color: #2e2a2a;
+  color: #ccc;
 }
 
 .social .fa:hover {
@@ -94,33 +110,13 @@ button {
 }
 
 @media (min-width: 768px) {
+  #contact {
+    margin: 10rem 10vw 0;
+  }
+
   .contact {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    margin-top: 10rem;
-  }
-
-  .email {
-    display: none;
-  }
-
-  .details {
-    padding: 0;
-    width: 40vw;
-  }
-
-  .details .title {
-    color: #915eff;
-  }
-
-  .details div {
-    margin: 5rem;
-  }
-
-  .fa-envelope {
-    position: relative;
-    top: 0;
-    left: 50px;
   }
 
   input,
