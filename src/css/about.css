@@ -45,11 +45,12 @@
 .hello p {
   margin-top: 0.5rem;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 40vh 5vw 20vh;
 }
@@ -60,6 +61,7 @@
   border-radius: 2rem;
   padding: 2.4rem 3rem;
   max-width: 350px;
+  margin-bottom: 10px;
 }
 
 .card:hover {
@@ -107,6 +109,7 @@
 
 .services .items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
@@ -131,6 +134,10 @@
 }
 
 @media (min-width: 768px) {
+  .hello p {
+    font-size: 2rem;
+  }
+
   .balls {
     display: flex;
     justify-content: center;
