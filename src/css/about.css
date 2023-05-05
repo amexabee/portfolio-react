@@ -16,7 +16,7 @@
   gap: 1.25rem;
 }
 
-.dot {
+.lolipop {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,11 +45,12 @@
 .hello p {
   margin-top: 0.5rem;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 40vh 5vw 20vh;
 }
@@ -60,6 +61,7 @@
   border-radius: 2rem;
   padding: 2.4rem 3rem;
   max-width: 350px;
+  margin-bottom: 10px;
 }
 
 .card:hover {
@@ -80,6 +82,7 @@
 
 .balls h1 {
   color: #915eff;
+  margin-left: 100px;
 }
 
 .fa-globe,
@@ -100,13 +103,14 @@
 
 .services h1 {
   font-size: 32px;
-  margin-bottom: 30px;
   color: #915eff;
   text-align: left;
+  margin: 0 0 2rem 5vw;
 }
 
 .services .items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
@@ -131,10 +135,29 @@
 }
 
 @media (min-width: 768px) {
+  .hello p {
+    font-size: 2rem;
+  }
+
   .balls {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 200px 0 0;
+  }
+
+  .balls div {
+    padding: 0;
+    width: 200px;
+  }
+}
+
+@media (max-width: 350px) {
+  .hello h1 {
+    font-size: 3.8rem;
+  }
+
+  .fa-globe {
+    left: 20px;
   }
 }

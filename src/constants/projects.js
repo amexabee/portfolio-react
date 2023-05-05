@@ -10,7 +10,7 @@ const projects = [
     link: 'https://swimming.onrender.com/',
     label: 'Swimming Class Booking',
     description:
-      'This is a React-Rails full-stack web application where users can load, create, and delete classes and reservations. In order to access the application users need to sign up or log in.',
+      'This is a React-Rails full-stack web application where users can load, create, and delete classes and reservations.',
     tools: 'React, Ruby, Rails, Postgres',
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     link: 'https://amanuel-moviehub.netlify.app/',
     label: 'Movies & TV Shows List',
     description:
-      'Movies & TV Shows List is a web app which fetches top movies and tv shows from an api and displays them. Users can filter through the list based on the search parameters they typed. And also they can click on any of the list to get detailed information.',
+      'This app fetches top movies and tv shows from an api and displays them. Users can filter through the list by typing a search parameter and get detailed information.',
     tools: 'React, Redux',
   },
   {
@@ -41,38 +41,5 @@ const projects = [
     tools: 'React, Redux',
   },
 ];
-
-// const projects = [
-//   // {
-//   //
-//   //   built: 'React, Ruby, Rails, Postgres',
-//   //   to: 'https://swimming.onrender.com/',
-//   // },
-//   // {
-//   //   label: 'Recipe App',
-//   //   built: 'Ruby, Rails, Postgres',
-//   //   to: 'https://github.com/amexabee/recipes_on_rails',
-//   // },
-//   // {
-//   //   label: 'Blog App',
-//   //   built: 'Ruby, Rails, Postgres',
-//   //   to: 'https://github.com/amexabee/blog-app',
-//   // },
-//   // {
-//   //   label: 'Calculator App',
-//   //   built: 'React',
-//   //   to: 'https://amanuel-math-magicians-8u34.onrender.com/',
-//   // },
-//   // {
-//   //   label: 'Leaderboard App',
-//   //   built: 'JavaScript',
-//   //   to: 'https://amanuel-leaderboad.netlify.app/',
-//   // },
-//   // {
-//   //   label: 'Todo List',
-//   //   built: 'JavaScript',
-//   //   to: 'https://amexabee.github.io/To-Do-List/dist/',
-//   // },
-// ];
 
 export default projects;

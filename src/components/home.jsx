@@ -25,10 +25,10 @@ const Home = () => {
       <div className="intro">
         {showMessage && <h1>WELCOME TO MY UNIVERSE</h1>}
       </div>
-      <div style={{ position: 'fixed', width: '100vw', height: '100vh' }}>
+      <div className="canvas">
         <Canvas>
           <OrbitControls />
-          <mesh position={[0, 0.2, -5]} scale={[2, 2, 2]}>
+          <mesh position={[0, -1, -5]} scale={[2, 2, 2]}>
             <boxGeometry args={[1, 1, 1]} />
             <meshBasicMaterial map={texture} />
           </mesh>

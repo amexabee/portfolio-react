@@ -15,6 +15,7 @@ import './css/home.css';
 import './css/about.css';
 import './css/portfolio.css';
 import './css/contact.css';
+import './css/navBar.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
