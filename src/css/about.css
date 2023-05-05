@@ -82,6 +82,7 @@
 
 .balls h1 {
   color: #915eff;
+  margin-left: 100px;
 }
 
 .fa-globe,
@@ -143,5 +144,20 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 200px 0 0;
+  }
+
+  .balls div {
+    padding: 0;
+    width: 200px;
+  }
+}
+
+@media (max-width: 350px) {
+  .hello h1 {
+    font-size: 3.8rem;
+  }
+
+  .fa-globe {
+    left: 20px;
   }
 }
