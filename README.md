@@ -60,8 +60,6 @@ This app is created using React, CSS, and HTML. It serves as my personal portfol
 
 ```
 Node
-Visual Studio Code
-MongoDB
 
 ```
 
