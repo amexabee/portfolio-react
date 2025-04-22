@@ -5,7 +5,7 @@ import {
   Route,
   RouterProvider,
 } from 'react-router-dom';
-import Home from './components/home';
+// import Home from './components/home';
 import Body from './components/body';
 import Main from './components/main';
 
@@ -20,8 +20,8 @@ import './css/navBar.css';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Body />}>
-      <Route index element={<Navigate to="home" replace />} />
-      <Route path="home" element={<Home />} />
+      <Route index element={<Navigate to="main" replace />} />
+      {/* <Route path="home" element={<Home />} /> */}
       <Route path="main" element={<Main />} />
     </Route>
   )
