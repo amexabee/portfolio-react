@@ -42,7 +42,7 @@ const About = () => {
           <h3>
             Experience <i className="fa fa-star fa-2x" />
           </h3>
-          <h4>1+ year working</h4>
+          <h4>2+ year working</h4>
           <p>
             Completed several projects working in React, Javascript, Ruby and
             Rails.
@@ -84,39 +84,3 @@ const About = () => {
 };
 
 export default About;
-
-{
-  /* <div className="lang-container">
-  <h3>About Me</h3>
-  <div className="front">
-    <h4>Front End</h4>
-    <div className="front-item">
-      <img src={js} className="js" alt="js" />
-      <p>JavaScript</p>
-    </div>
-    <div className="front-item">
-      <img src={react} className="react" alt="react" />
-      <p>React</p>
-    </div>
-    <div className="front-item">
-      <img src={redux} className="redux" alt="redux" />
-      <p>Redux</p>
-    </div>
-  </div>
-  <div className="back">
-    <h4>Back End</h4>
-    <div className="back-item">
-      <img src={ruby} className="ruby" alt="ruby" />
-      <p>Ruby</p>
-    </div>
-    <div className="back-item">
-      <img src={rails} className="ruby" alt="rails" />
-      <p>Rails</p>
-    </div>
-    <div className="back-item">
-      <img src={postgres} className="postgres" alt="postgres" />
-      <p>Postgres</p>
-    </div>
-  </div>
-</div> */
-}
