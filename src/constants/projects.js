@@ -1,17 +1,17 @@
-import swimming from '../images/thumbnails/swimming.png';
+import banking from '../images/thumbnails/banking.JPG';
 import space from '../images/thumbnails/space.JPG';
 import movies from '../images/thumbnails/movies.JPG';
 import bookstore from '../images/thumbnails/bookstore.JPG';
 
 const projects = [
   {
-    name: swimming,
+    name: banking,
     github: 'https://github.com/amexabee/Final-Capstone-FrontEnd',
-    link: 'https://swimming.onrender.com/',
-    label: 'Swimming Class Booking',
+    link: 'https://banking-app-chi-six.vercel.app/',
+    label: 'Banking App',
     description:
-      'This is a React-Rails full-stack web application where users can load, create, and delete classes and reservations.',
-    tools: 'React, Ruby, Rails, Postgres',
+      'A full-stack role-based banking application with user, employee, and admin functionality.',
+    tools: 'TypeScript, NextJS, Express, Postgres',
   },
   {
     name: space,

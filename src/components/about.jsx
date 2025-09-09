@@ -42,7 +42,7 @@ const About = () => {
           <h3>
             Experience <i className="fa fa-star fa-2x" />
           </h3>
-          <h4>1+ year working</h4>
+          <h4>3+ years working</h4>
           <p>
             Completed several projects working in React, Javascript, Ruby and
             Rails.
@@ -51,8 +51,8 @@ const About = () => {
           <h3>Projects</h3>
           <h4>20+ and couting</h4>
           <p>
-            Bookstore app, Blog App, Space Travellers Hub, Movie Hub and Todo
-            List.
+            Banking App, Bookstore app, Blog App, Space Travellers Hub, Movie
+            Hub and AI Slide Generator.
           </p>
         </div>
       </div>
@@ -78,7 +78,7 @@ const About = () => {
         </div>
       </div>
 
-      <Tech />
+      {/* <Tech /> */}
     </div>
   );
 };
