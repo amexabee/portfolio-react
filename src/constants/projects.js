@@ -6,7 +6,7 @@ import bookstore from '../images/thumbnails/bookstore.JPG';
 const projects = [
   {
     name: banking,
-    github: 'https://github.com/amexabee/Final-Capstone-FrontEnd',
+    github: 'https://github.com/amexabee/banking-app',
     link: 'https://banking-app-chi-six.vercel.app/',
     label: 'Banking App',
     description:
